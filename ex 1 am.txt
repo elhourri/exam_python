@@ -39,6 +39,7 @@ debut
         Ecrire("Voulez-vousune nouvelle liste? (oui/non)")
         lire(reponse)
     jusqu'à reponse <> "oui"
+fin
 
 
    
