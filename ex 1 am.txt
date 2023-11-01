@@ -1,0 +1,45 @@
+algorithme diviser
+fonction:  soustableau(T:tableau[10]entier,i1:entier,i2:entier):reel
+varables    tab:tableau[]entier
+debut
+	taille<--0
+	si i1>i2 alors:
+	   taille<----i1-i2
+	sinon
+	 taille<---i2-i1
+	fin si
+	pour i<---0 a taille-1 faire
+	  si i1>i2 alors:
+	   tab[i]<---T[i2+i]
+	  sinon
+	   tab[i]<---T[i1+i]
+	fin si
+	fin pour
+	returne tab
+fin
+  variable  
+            Tableau T(10)
+            indice_d , indice_fin, : entier 
+            reponse : chaine de caractere 
+debut 
+
+    repeter
+        pour i <-- 0 à 9 pas 1 faire 
+            Ecrire("veuillez entrer la valeur",i":)
+            lire(T(i))
+        fin pour 
+        Ecrire("veuillez entrer l indice de deb :")
+        lire(indice_deb)
+        Ecrire("veuillez entrer l indice de fin:")
+        lire(indice_fin)
+
+        resultat = Sous_tab(T, indice_deb , indice_fin)
+        Ecrire("le sous tableau extrait est :", resultat)
+
+        Ecrire("Voulez-vousune nouvelle liste? (oui/non)")
+        lire(reponse)
+    jusqu'à reponse <> "oui"
+
+
+   
+  
